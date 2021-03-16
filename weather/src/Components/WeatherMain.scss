@@ -1,0 +1,32 @@
+.temp__celcius{
+    height: 2rem;
+}
+
+.weather{
+    &__title{
+        letter-spacing: 0.2rem;
+        font-size: 3rem;
+        margin: 0;
+        font-family: raleway;
+        font-weight: bolder;
+        color: rgba(17, 11, 7, 0.801);
+        text-transform: capitalize;
+        text-align: center;
+        height: 7vh;
+    }
+    &__temp{
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        margin: 0;
+        font-family: raleway;
+        font-weight: bolder;
+        margin-top: 1rem;
+        color: rgba(17, 11, 7, 0.801);
+        text-transform: capitalize;
+        text-align: center;
+        height: 7vh;
+    }
+    &__icon{
+        font-size: 3rem;
+    }
+}

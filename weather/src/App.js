@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import WeatherMain from './Components/WeatherMain';
 import Form from './Components/WeatherForm';
 import 'weather-icons/css/weather-icons.css';
+import './App.scss';
 
 const API_key = "e092d1dd4136b38e9e2aed9e6e99776b";
 
@@ -69,7 +70,7 @@ class App extends Component {
     const country= e.target.elements.country.value;
 
     if(city && country){
-        const api_call=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_key}`);
+        const api_call=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_key}`);
         const response = await api_call.json();
         console.log(response);
         this.setState({
@@ -87,9 +88,9 @@ class App extends Component {
 }
   render() {
     return (
-      <div>
+      <div className="main">
         <Form
-          loadweather={this.getWeather}
+          loadWeather={this.getWeather}
           error={this.state.error}
         />
         <WeatherMain
