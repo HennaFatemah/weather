@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import WeatherMain from './Components/WeatherMain';
 import Form from './Components/WeatherForm';
-import './App.css';
 import 'weather-icons/css/weather-icons.css';
 
 const API_key = "e092d1dd4136b38e9e2aed9e6e99776b";
