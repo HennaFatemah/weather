@@ -3,7 +3,7 @@ import React from 'react';
 const WeatherMain = () => {
     return (
         <div>
-            Hi
+            <h1>Mississauga</h1>
         </div>
     );
 };
